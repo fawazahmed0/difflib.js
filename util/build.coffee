@@ -8,7 +8,7 @@ browserify = require('browserify')
 BANNER = '''
 /**
  * @fileoverview Text diff library ported from Python's difflib module. 
- *     https://github.com/qiao/difflib.js
+ *     https://github.com/fawazahmed0/difflib.js
  */
 
 '''

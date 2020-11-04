@@ -8,7 +8,7 @@ Installation
 
 #### Browser
 
-To use it in the browser, you may download the [minified js file](https://github.com/qiao/difflib.js/raw/master/dist/difflib-browser.js) and include it in your webpage.
+To use it in the browser, you may download the [minified js file](https://github.com/fawazahmed0/difflib.js/raw/master/dist/difflib-browser.js) and include it in your webpage.
 
 ```html
 <script type="text/javascript" src="./difflib-browser.js"></script>
