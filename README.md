@@ -17,12 +17,12 @@ import * as difflib from './lib/difflib.js'
 
 
 
-```
+
 
 Quick Examples
 --------------
 
-1. contextDiff
+- contextDiff
 
     ```js
     >>> s1 = ['bacon\n', 'eggs\n', 'ham\n', 'guido\n']
@@ -43,7 +43,7 @@ Quick Examples
       '  guido\n' ]
     ```
 
-2. unifiedDiff
+- unifiedDiff
 
     ```js
     >>> difflib.unifiedDiff('one two three four'.split(' '),
@@ -66,7 +66,7 @@ Quick Examples
     ```
 
 
-3. ndiff
+- ndiff
 
     ```js
     >>> a = ['one\n', 'two\n', 'three\n']
@@ -83,7 +83,7 @@ Quick Examples
       '+ emu\n' ]
     ```
 
-4. ratio
+- ratio
 
     ```js
     >>> s = new difflib.SequenceMatcher(null, 'abcd', 'bcde');
@@ -95,7 +95,7 @@ Quick Examples
     1.0
     ```
 
-5. getOpcodes
+- getOpcodes
 
     ```js
     >>> s = new difflib.SequenceMatcher(null, 'qabxcd', 'abycdf');
@@ -107,7 +107,7 @@ Quick Examples
       [ 'insert'  , 6 , 6 , 5 , 6 ] ]
     ```
 
-6. getCloseMatches
+- getCloseMatches
 
     ```js
     >>> difflib.getCloseMatches('appel', ['ape', 'apple', 'peach', 'puppy'])
