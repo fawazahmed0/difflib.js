@@ -6,26 +6,12 @@ A JavaScript module which provides classes and functions for comparing sequences
 Installation
 ------------
 
-#### Browser
+#### Browser / Node.js
 
-To use it in the browser, you may download the [minified js file](https://github.com/fawazahmed0/difflib.js/raw/master/dist/difflib-browser.js) and include it in your webpage.
+Use [parcel](https://github.com/parcel-bundler/parcel) to allow you to use import
 
-```html
-<script type="text/javascript" src="./difflib-browser.js"></script>
-```
+`import * as difflib from './difflib.js'`
 
-#### Node.js
-
-For Node.js, you can install it using Node Package Manager (npm):
-
-```bash
-npm install difflib
-```
-
-Then, in your script:
-
-```js
-var difflib = require('difflib');
 ```
 
 Quick Examples
