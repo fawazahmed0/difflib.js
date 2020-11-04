@@ -10,7 +10,9 @@ Installation
 
 Use [parcel](https://github.com/parcel-bundler/parcel)
 
-`import * as difflib from './lib/difflib.js'`
+```javascript
+import * as difflib from './lib/difflib.js'
+```
 
 
 
