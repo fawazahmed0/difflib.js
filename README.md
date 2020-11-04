@@ -144,6 +144,7 @@ Documentation
 
 
 <a name="SequenceMatcher" />
+
 ### *class* difflib.**SequenceMatcher**([isjunk[, a[, b[, autojunk=true]]]])
 
 This is a flexible class for comparing pairs of sequences of any type.
@@ -177,6 +178,7 @@ automatic junk heuristic, which automatically treats certain sequence items as j
 
 
 <a name="setSeqs" />
+
 #### setSeqs(a, b)
 
 Set the two sequences to be compared.
@@ -187,16 +189,19 @@ use [setSeq2()](#setSeq2) to set the commonly used sequence once and call
 [setSeq1()](#setSeq1) repeatedly, once for each of the other sequences.
 
 <a name="setSeq1" />
+
 #### setSeq1(a)
 
 Set the first sequence to be compared. The second sequence to be compared is not changed.
 
 <a name="setSeq2" />
+
 #### setSeq2(a)
 
 Set the second sequence to be compared. The first sequence to be compared is not changed.
 
 <a name="findLongestMatch" />
+
 #### findLongestMatch(alo, ahi, blo, bhi)
 
 Find longest matching block in `a[alo:ahi]` and `b[blo:bhi]`.
@@ -239,6 +244,7 @@ If no blocks match, this returns `[alo, blo, 0]`.
 
 
 <a name="getMatchingBlocks" />
+
 #### getMatchingBlocks()
 
 Return list of triples describing matching subsequences. 
@@ -258,6 +264,7 @@ in other words, adjacent triples always describe non-adjacent equal blocks.
 ```
 
 <a name="getOpcodes" />
+
 #### getOpcodes()
 
 Return list of 5-tuples describing how to turn a into b. 
@@ -286,12 +293,14 @@ The tag values are strings, with these meanings:
 ```
 
 <a name="getGroupedOpcodes" />
+
 #### getGroupedOpcodes([n])
 
 Return a list groups with upto n (default is 3) lines of context.
 Each group is in the same format as returned by [getOpcodes()](#getOpcodes).
 
 <a name="ratio" />
+
 #### ratio()
 
 Return a measure of the sequences’ similarity as a float in the range [0, 1].
@@ -307,11 +316,13 @@ you may want to try [quickRatio()](#quickRatio) or
 [realQuickRatio()](#realQuickRatio) first to get an upper bound.
 
 <a name="quickRatio" />
+
 #### quickRatio()
 
 Return an upper bound on ratio() relatively quickly.
 
 <a name="realQuickRatio" />
+
 #### realQuickRatio()
 
 Return an upper bound on ratio() very quickly.
@@ -327,6 +338,7 @@ Return an upper bound on ratio() very quickly.
 ```
 
 <a name="Differ" />
+
 ### *class* difflib.**Differ**([linejunk[, charjunk]])
 
 This is a class for comparing sequences of lines of text, 
@@ -358,6 +370,7 @@ The default is **null**, meaning that no line is considered junk.
 The default is *null*, meaning that no character is considered junk.
 
 <a name="compare" />
+
 #### compare(a, b)
 
 Compare two sequences of lines, and generate the delta (a sequence of lines).
@@ -380,6 +393,7 @@ Each sequence must contain individual single-line strings ending with newlines.
 ```
 
 <a name="contextDiff" />
+
 ### difflib.**contextDiff**(a, b, options)
 
 Compare *a* and *b* (lists of strings); 
@@ -431,6 +445,7 @@ If not specified, the strings default to blanks.
 ```
 
 <a name="getCloseMatches" />
+
 ### difflib.*getCloseMatches*(word, possibilities\[, n\]\[, cutoff\])
 
 Return a list of the best “good enough” matches. 
@@ -454,6 +469,7 @@ returned in a list, sorted by similarity score, most similar first.
 ```
 
 <a name="ndiff" />
+
 ### difflib.**ndiff**(a, b\[, linejunk\]\[, charjunk\])
 
 Compare *a* and b (lists of strings); 
@@ -488,6 +504,7 @@ bad idea to include newline in this!).
 ```
 
 <a name="restore" />
+
 ### difflib.**restore**(sequence, which)
 
 Return one of the two sequences that generated a delta.
@@ -510,6 +527,7 @@ extract lines originating from file 1 or 2 (parameter which), stripping off line
 ```
 
 <a name="unifiedDiff" />
+
 ### difflib.**unifiedDiff**(a, b, options)
 
 Compare a and b (lists of strings); 
@@ -564,12 +582,14 @@ If not specified, the strings default to blanks.
 
 
 <a name="IS_LINE_JUNK" />
+
 ### difflib.**IS\_LINE\_JUNK**(line)
 
 Return true for ignorable lines. The line line is ignorable if *line* is 
 blank or contains a single `'#'`, otherwise it is not ignorable.
 
 <a name="IS_CHARACTER_JUNK" />
+
 ### difflib.**IS\_CHARACTER\_JUNK**(ch)
 
 Return true for ignorable characters. The character *ch* is ignorable if ch
