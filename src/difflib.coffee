@@ -1138,7 +1138,7 @@ unifiedDiff = (a, b, {fromfile, tofile, fromfiledate, tofiledate, n, lineterm}={
 
   lines = []
   started = false
-  for group in (new SequenceMatcher(null, a, b)).getGroupedOpcodes()
+  for group in (new SequenceMatcher(null, a, b)).getGroupedOpcodes(n)
     unless started
       started = true
       fromdate = if fromfiledate then "\t#{fromfiledate}" else ''
@@ -1229,7 +1229,7 @@ contextDiff = (a, b, {fromfile, tofile, fromfiledate, tofiledate, n, lineterm}={
     equal   : '  '
   started = false
   lines = []
-  for group in (new SequenceMatcher(null, a, b)).getGroupedOpcodes()
+  for group in (new SequenceMatcher(null, a, b)).getGroupedOpcodes(n)
     unless started
       started = true
       fromdate = if fromfiledate then "\t#{fromfiledate}" else ''
