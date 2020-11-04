@@ -8,9 +8,12 @@ Installation
 
 #### Browser / Node.js
 
-Use [parcel](https://github.com/parcel-bundler/parcel) to allow you to use import
+Use [parcel](https://github.com/parcel-bundler/parcel)
 
-`import * as difflib from './difflib.js'`
+`import * as difflib from './lib/difflib.js'`
+
+
+
 
 ```
 
