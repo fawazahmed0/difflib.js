@@ -8,7 +8,7 @@ Installation
 
 #### Browser / Node.js
 
-Use [parcel](https://github.com/parcel-bundler/parcel) or any bundler
+Use [parcel](https://github.com/parcel-bundler/parcel) or any bundler to bundle [difflib.js](https://github.com/fawazahmed0/difflib.js/tree/master/lib)
 
 ```javascript
 import * as difflib from './lib/difflib.js'
